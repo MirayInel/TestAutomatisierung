@@ -1,6 +1,5 @@
 package tonlineTV;
 
-
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
@@ -26,7 +25,7 @@ public interface TVElements {
 	By gh_hunds = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[12]/a");
 
 	// t-online Header
-	By th_tonlinehead = By.xpath("");
+	By th_tonlinehead = By.xpath("/html/body/div[4]");
 	By th_tonlineLogo = By.xpath("/html/body/div[4]/div/a");
 	By th_googlesucheFeld = By.xpath("/html/body/div[4]/div/form/div[1]");
 	By th_googlesucheButton = By.xpath("/html/body/div[4]/div/form/div[2]");
@@ -37,8 +36,11 @@ public interface TVElements {
 
 	// nach oben-Link
 	By l_nachoben = By.xpath("/html/body/div[9]/div/div");
-	
-	//Landscape-Ansicht Suche Feld
+
+	// tv Header
+	By l_tvh_tvhead = By.xpath("/html/body/div[5]");
+
+	// Landscape-Ansicht Suche Feld
 	By l_sucheFeld = By.xpath("");
 
 	// Landscape-Ansicht Navi-Elemente
@@ -134,10 +136,22 @@ public interface TVElements {
 	By p_unterhaltung = By.xpath("/html/body/div[5]/div/div[2]/ul/li[14]/a");
 
 	// Video Upload Contentbreaker
-	// By vupcb_text =
-	// By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]/div/p");
+	By cb_vidupload = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]");
+	By cb_vidupload_text = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]/div/p");
+	By cb_vidupload_button = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]/div/div/a");
+	
+	// Facebook Contentbreaker
+	By cb_facebook = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]");
+	By cb_facebook_text = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/p");
+	By cb_facebook_schalter = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/div/ul/li[1]/span[2]");
+	By cb_facebook_dsfl = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/div/ul/li[1]/div");
+	By cb_facebook_dsinfo = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/div/ul/li[1]/span[1]");
+	By cb_facebook_dslink = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/div/ul/li[1]/span[1]/p[1]/a");
+	By cb_facebook_button = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[2]/div/div/ul/li[1]/div/img");
+	
 
 	// Footerleiste Elemente
+	By fl = By.xpath("/html/body/div[8]");
 	By fl_impressum = By.xpath("/html/body/div[8]/div[1]/ul/li[1]/a");
 	By fl_datenschutz = By.xpath("/html/body/div[8]/div[1]/ul/li[2]/a");
 	By fl_nbow = By.xpath("/html/body/div[8]/div[1]/ul/li[3]/a");
@@ -164,8 +178,6 @@ public interface TVElements {
 	String url_gh_spotify = "http://www.telekom.de/spotify";
 	String url_gh_freizeichentoene = "https://www.freizeichen.t-mobile.de";
 	String url_gh_hunds = "http://www.telekom.de/fuer-privatkunden/hilfe-und-service";
-
-
 
 	// tonline Header URLs
 	String url_th_tLogo = "http://www.t-online.de/";

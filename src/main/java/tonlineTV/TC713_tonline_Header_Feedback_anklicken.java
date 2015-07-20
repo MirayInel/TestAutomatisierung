@@ -2,7 +2,7 @@ package tonlineTV;
 
 import org.openqa.selenium.WebElement;
 
-public class TCxxx_tonline_Header_Feedback extends TOnlineTV {
+public class TC713_tonline_Header_Feedback_anklicken extends TOnlineTV {
 	boolean testStepStatus;
 	
 	@Override

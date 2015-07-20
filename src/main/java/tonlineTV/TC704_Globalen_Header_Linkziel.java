@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class TC704_Globalen_Header_Linkziel extends TOnlineTV {
 
+	@Override
 	public void runTest() {
 
 		WebElement globHeader = driver.findElement(TVElements.gh_globhead);
