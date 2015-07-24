@@ -31,12 +31,6 @@ public interface TVElements {
 	By th_googlesucheButton = By.xpath("/html/body/div[4]/div/form/div[2]");
 	By th_feedbackLink = By.xpath("/html/body/div[4]/div/p");
 
-	// Video-Upload-Lasche
-	By lasche = By.xpath("/html/body/a");
-
-	// nach oben-Link
-	By l_nachoben = By.xpath("/html/body/div[9]/div/div");
-
 	// tv Header
 	By l_tvh_tvhead = By.xpath("/html/body/div[5]");
 
@@ -135,6 +129,26 @@ public interface TVElements {
 	By p_wirtschaft = By.xpath("/html/body/div[5]/div/div[2]/ul/li[13]/a");
 	By p_unterhaltung = By.xpath("/html/body/div[5]/div/div[2]/ul/li[14]/a");
 
+	// Breadcrumb
+	By l_breadcrumb = By.xpath("/html/body/div[6]/div[1]/div[1]/div[1]");
+	
+	// Contentbox
+	By l_contentBox = By.xpath("/html/body/div[6]/div[1]");
+	
+	// Video-Upload-Lasche
+	By lasche = By.xpath("/html/body/a");
+	
+	// nach oben-Link
+	By l_nachoben = By.xpath("/html/body/div[9]/div/div");
+	
+	// Aufmacher Video Teaser
+	By aufmacherVideoTeaserBild = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]");
+	By aufmacherVideoTeaserText = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]");
+	
+	// Kleine Video Teaser
+	By kleineVideoTeaserBild = By.xpath("/html/body/div[6]/div[1]/div[4]/div[2]/div[2]");
+	By kleineVideoTeaserText = By.xpath("/html/body/div[6]/div[1]/div[4]/div[2]/div[1]");
+	
 	// Video Upload Contentbreaker
 	By cb_vidupload = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]");
 	By cb_vidupload_text = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[3]/div/div[1]/div/p");
@@ -161,6 +175,10 @@ public interface TVElements {
 	By fl_werben = By.xpath("/html/body/div[10]/div[1]/ul/li[6]/a");
 	By fl_copyright = By.xpath("/html/body/div[8]/div[1]/div");
 
+	
+	
+	
+	
 	// URLs
 
 	String url_tvStartseite = "http://www.t-online.de/tv/";
