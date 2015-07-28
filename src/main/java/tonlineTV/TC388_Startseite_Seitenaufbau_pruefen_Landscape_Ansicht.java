@@ -37,5 +37,9 @@ public class TC388_Startseite_Seitenaufbau_pruefen_Landscape_Ansicht extends TOn
 				logger.error(elem + "ist nicht vorhanden!");
 			}
 		}
+		
+		if (testStatus) {
+			logger.info("Test erfolgreich durchgeführt.");
+		}
 	}
 }
