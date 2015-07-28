@@ -236,11 +236,12 @@ public class TOnlineTV implements TVElements {
 		
 		
 		ArrayList<TOnlineTV> testset = new ArrayList<>();
+		testset.add(new TC388_Startseite_Seitenaufbau_pruefen_Landscape_Ansicht());
 //		testset.add(new TC404_nachoben_verhalten());
 //		testset.add(new TC407_MegaNavi_Playbuttons());
 //		testset.add(new TC702_Globalen_Header_mehr_verhalten());
 //		testset.add(new TC703_Globalen_Header_aufgeklappt_Darstellung());
-		testset.add(new TC704_Globalen_Header_Linkziel());
+//		testset.add(new TC704_Globalen_Header_Linkziel());
 		
 		
 		for (TOnlineTV elem : testset) {
@@ -256,10 +257,7 @@ public class TOnlineTV implements TVElements {
 //			}
 //			
 //			elem.afterTest();
-		}
-		
-		
-		
+		}	
 		
 
 //		TC404_nachoben_verhalten TC_404 = new TC404_nachoben_verhalten();		
