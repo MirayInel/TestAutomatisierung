@@ -12,7 +12,8 @@ public interface TVElements {
 	By gh_globhead = By.xpath("/html/body/div[2]/div");
 	By gh_telekom = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[1]/a");
 	By gh_tonline = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[2]/a");
-	By gh_favoriten = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[3]/a");
+	By gh_pulsweb = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[3]/a");
+//	By gh_favoriten = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[3]/a");
 	By gh_email = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[4]/a");
 	By gh_mediencenter = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[5]/a");
 	By gh_kundencenter = By.xpath("/html/body/div[2]/div/div/div[1]/div/div[6]/a");
@@ -174,14 +175,35 @@ public interface TVElements {
 	By fl_kontakt = By.xpath("/html/body/div[10]/div[1]/ul/li[5]/a");
 	By fl_werben = By.xpath("/html/body/div[10]/div[1]/ul/li[6]/a");
 	By fl_copyright = By.xpath("/html/body/div[8]/div[1]/div");
-
 	
+
+	// Player-Elemente
+	By player = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]");
+	
+	By playerControls = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]");
+		By controlPanelLeft = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]");
+			By play = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]");
+			By pause = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]");
+			By timecode = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]");
+	
+	By controlPanelCenter = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]");
+	By progressbar = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]");
+		By controlPanelRight = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]");
+			By volume = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]");
+			By volumePanel = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]");
+			By volumeSlider = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div");
+			By volumeTooltip = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div");
+			
+			By fullscreen = By.xpath("/html/body/div[6]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[4]/div[3]");
+			
 	
 	
 	
 	// URLs
 
 	String url_tvStartseite = "http://www.t-online.de/tv/";
+	String url_tvVideoDetailSeite = "http://www.t-online.de/tv/webclips/spektakulaere-videos/id_76833174/so-geht-bagger-abladen-fuer-fortgeschrittene.html";
+	
 
 	// Globalen Header URLs
 	String url_gh_telekom = "http://www.telekom.de";
